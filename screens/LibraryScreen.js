@@ -18,6 +18,7 @@ export default function LibraryScreen({ navigation, data }) {
                 <FlatList
                     data={data}
                     renderItem={({ item }) =>
+                    
                         <TouchableOpacity onPress={() => {
                             navigation.navigate('Book', {
                                 id: item.id

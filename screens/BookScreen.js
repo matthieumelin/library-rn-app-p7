@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { StyleSheet, View, Text } from 'react-native';
+import { StyleSheet, View, Text, SafeAreaView } from 'react-native';
 
 import axios from 'axios';
 
@@ -15,11 +15,11 @@ export default function BookScreen({ route }) {
     }, [])
 
     return (
-        <View style={styles.container}>
+        <SafeAreaView style={styles.container}>
             <View style={styles.book}>
                 <Text>{data.id}</Text>
             </View>
-        </View>
+        </SafeAreaView>
     )
 }
 
